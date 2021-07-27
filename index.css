@@ -97,9 +97,12 @@ header #toggle:after
      position: relative;
      display: flex;
      flex-direction: column;
+     top:30%;
  }
  #navigation ul li{
      list-style: none;
+     text-align: center;
+     
 
  }
  #navigation ul li a{
@@ -198,6 +201,8 @@ header #toggle:after
  {
     font-size: 1.5em;
     margin: 5px 0;
+    float: left;
+
  }
 }
 .sci {
