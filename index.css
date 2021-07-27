@@ -2,7 +2,7 @@
 {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 header
 {
@@ -11,21 +11,19 @@ header
     left: 0;
     width: 100%;
     display: flex;  
-    justify-content: space-between;
+    justify-content:space-between;
     padding: 40px 100px;
     z-index: 10000;
     transition: 0.6s;
 }
 header .logo
 {
-    position: relative;
     font-weight: 700;
-    color: aqua;
-    text-decoration: none;
+    color:black;
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 2px;
-    transition: 0.6s;
+    transition: 10s;
 }
 header #toggle
 {
@@ -37,32 +35,31 @@ header #toggle
 header #toggle:before
 {
     content: '';
-    position:absolute; 
+    position: absolute; 
     top: 7px;
     width:100%;
     height:2px;
-    background: #fff;
+    background: #40c3ff;
 }
 header #toggle:after
 {
     content: '';
     position:absolute;
-    bottom:7px ;
-    top: 7px;
+    bottom:7px;
     width:100%;
     height:2px;
-    background: #fff;  
+    background: #40c3ff;  
 }
  .banner.active header #toggle:before
  {
-     top:50%;
-     left:50%;
+     top: 50%;
+     left: 50%;
      transform: translate(-50%,-50%) rotate(45deg);
  }  
  .banner.active header #toggle:after
  {
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%,-50%) rotate(-45deg);
  } 
  .banner 
@@ -71,6 +68,7 @@ header #toggle:after
    width: 100%;
    min-height: 100vh;
    padding: 100px;
+   background-image: url(zmnm.jpg);
    background-size: cover;
    display: flex;
    align-items: center;
@@ -111,6 +109,7 @@ header #toggle:after
      font-size: 2em;
      font-weight: 600;
      text-transform: uppercase;
+     place-items: center; 
  }
  .content{
      max-width: 600px;
@@ -123,29 +122,35 @@ header #toggle:after
      color:#40c3ff;
      font-size: 1.2em;
  }
+ .content ol li{
+    font-size: 1.2em;
+    color:#40c3ff; 
+    font-size: 300;
+    
+ }
  .content p{
-     font-size: 1.2em;
-     color: brown;
-     font-size: 300;
+     color:black;
+     font-size:x-large;
+     font-weight: bolder;
  }
  .content a{
      position: relative;
      display: inline-block;
      margin-top:20px;
-     background: lawngreen;
-     color: lightblue;
+     background: #40c3ff;
+     color:black;
      padding: 10px 30px;
      text-decoration: none;
-     font-size: 1.2em;
+     font-size: 1.5em;
      font-weight: 500;
-     
 }
  .sci 
 {
     position:absolute;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     right: 100px;
+    font-size:xx-large;
  }
 .sci li
 {
@@ -155,13 +160,13 @@ header #toggle:after
     position: relative;
     display: grid;
     place-items: centre;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     text-decoration: none;
     font-size: larger;
 }
 .sci li a:hover{
-    background:black;
+    background:#40c3ff;
 }
 .sci li a img{
     max-width: 20px;
@@ -204,4 +209,74 @@ header #toggle:after
 .sci li a{
     margin: initial;
     margin-right: 10px;
+    color: black;
 } 
+.contactme{
+	position: absolute;
+    width: 100%;
+	height: 70vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+form{
+	width: 90%;
+
+	max-width: 600px;
+}
+.input-group{
+	margin-bottom: 30px;
+	position: relative;
+}
+input, textarea{
+	width: 100%;
+	padding: 10px;
+	outline: 0;
+	border: 1px solid #fff; 
+	color: #fff;
+	background: transparent;
+	font-size: 15px;
+}
+label{
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 10px;
+	color: #fff;
+	cursor: text;
+	transition: 0.2s;
+}
+.btn{
+	position: relative;
+	top: -10px;
+	background-color: black;
+	outline: none;
+	
+}
+button{
+	font-size: 15px;
+	padding: 10px;
+	color: #fff;
+	outline: none;
+	background: transparent;
+	border: 1px solid #fff;
+	width: 100%;
+	cursor: pointer;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+	top: -35px;
+	font-size: 14px;
+}
+.row{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.row .input-group{
+	flex-basis: 48%;
+}
