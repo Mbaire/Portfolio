@@ -2,34 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="index.css"> 
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Landing page</title>
 </head>
 <body>
     <section class= "banner" id="sec">
         <header>
-            <a href="#" class="logo">logo</a>
-            <div id="toggle"></div>
+            <a href="#" class="logo">MNM</a>
+            <div id="toggle" onclick="toggle()"></div>
         </header>
         <div class="content">
-            <h2>Hello World,<br>I,m <span>Mary Natalie</span></h2>
+            <h2>Hello World,<br>I'm <span>Mary Natalie</span></h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nam esse molestiae facilis quidem voluptate natus exercitationem eum deserunt fuga quis voluptatibus, expedita qui voluptas aperiam commodi odio, quibusdam voluptatum!</p>
             <a href="#">Know More</a>
         </div>
         <ul class="sci">
-            <li><a href="#"><img src="Facebook.png"></a></li>
-            <li><a href="#"><img src="Github.png"></a></li>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-github-square"></i></i></a></li>
         </ul>
     </section>
     <div id="navigation">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Contacts/a></li>
+                    <li><a href="index.html">Home</a></li>
+					<li><a href="aboutme.html">About Me</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="contacts.html">Contact</a></li>
         </ul>
-     </div>   
-     <script type="JS/index.js"></script>
+     </div> 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer">
+     </script>  
+     <script src="JS/index.js"></script>
+     
 </body>
 </html>
