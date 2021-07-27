@@ -270,3 +270,11 @@ textarea:valid~label{
 .row .input-group{
 	flex-basis: 48%;
 }
+img{
+    position: absolute;
+    top: 22%;
+    left: 67.5%;
+    float: inherit;
+     border-radius: 67%;
+    background-color: black;
+}
