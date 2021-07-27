@@ -1,0 +1,37 @@
+*
+{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+header
+{
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    padding: 40px 100px;
+    z-index: 10000;
+    transition: 0.6s;
+}
+header .logo
+{
+    position: relative;
+    font-weight: 700;
+    color: aqua;
+    
+}
+ .banner 
+{
+   position: relative;  
+   width: 100%;
+   min-height: 100vh;
+   padding: 100px;
+   background: url(mm.jpg);
+   background-size: cover;
+   display: flex;
+   align-items: center;
+ }
